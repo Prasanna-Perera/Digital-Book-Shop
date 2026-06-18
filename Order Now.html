@@ -1,11 +1,181 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Aqsha bookshop - Official Website</title>
     
+    <!--  Icon -->
+    <link rel="icon" href="assets/img/87e3dd31-57eb-4b9c-9e7c-4395477c6986-removebg-preview.png" sizes="512x512" type="image/png">
+    <!-- css -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Header Style */
+        table:first-of-type h1 {
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        table:first-of-type p {
+            font-size: 18px;
+        }
+
+        /* Navigation Style */
+        table:nth-of-type(2) {
+            border-collapse: collapse;
+            background: #a6b7ca !important;
+        }
+
+        table:nth-of-type(2) td {
+            border: none;
+            transition: 0.3s;
+        }
+
+        table:nth-of-type(2) td:hover {
+            background: #0056b3;
+        }
+
+        table:nth-of-type(2) a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<!-- Header -->
+
+   
+    <!-- Header Section -->
+    <table border="0" width="100%" bgcolor="#f2f2f2" cellpadding="15">
+        
+        <tr>
+            <td align="center">
+  
+                <img src="Assets/img/87e3dd31-57eb-4b9c-9e7c-4395477c6986-removebg-preview.png" alt="Aqsha Bookshop" width="400" height="400">
+            </td>
+        </tr>
+        
+    </table>
+
+    <!-- Navigation Bar -->
+    <hr>
+    <table border="1" width="100%" bgcolor="#333333" cellpadding="10">
+        <tr align="center">
+            
+            <td><a href="home.html"><font color="white">Home</font></a></td>
+            <td><a href="Reviews.html"><font color="white">Reviews</font></a></td>
+            <td><a href="Order Now.html"><font color="white">Order Now</font></a></td>
+            <td><a href="Contact.html"><font color="white">Contact Us</font></a></td>
+            <td><a href="School books.html"><font color="white">School Books</font></a></td>
+        </tr>
+    </table>
+    <hr>
+    
+
+    <section id="body sec">
+        <h1>Order Page</h1>
+    <hr>
+    <h2 id="story">📖 Story Books Selection</h2>
+    <table border="1" cellpadding="15" cellspacing="0">
+        <tr>
+            <th>Book Cover</th>
+            <th>Book Title & Details</th>
+            <th>Price</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td> <img width="100" height="150" src="assets/img/ChatGPT Image Jun 11, 2026, 08_28_43 PM.png"
+                    alt="book cover 1"></td>
+            <td><b>The Secret Island</b>
+                <p>Author:Enid Blyton</p>
+                <br>
+                An exicting adventure story about four children spending their holidays on a hidden Island
+            </td>
+            <td>Rs 850.00</td>
+            <td><mark>In Stock</mark></td>
+        </tr>
+        <tr>
+            <td> <img width="100" height="150" src="assets/img/ChatGPT Image Jun 11, 2026, 08_30_52 PM.png"
+                    alt="book cover 2"></td>
+            <td>
+                <b>Madol Duwa</b>
+                <p>Author: Martin Wickramasinha</p>
+                <br>
+                A Classic Sinhales novel translated into English,showcasing the lives of teenage boys on an isolated
+                island.
+            </td>
+            <td>Rs 600.00</td>
+            <td>
+            <mark>In Stock</mark>
+            <br>
+            <div class="order button"
+            <button type="submit">Order Now</button>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <a href="#top">🔺 Back to Top</a>
+    <hr>
+    <h2 id="textbook">📝 School Textbooks</h2>
+    <table border="1" cellpadding="15" cellspacing="0">
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Medium</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Information & Communication Technology(ICT)</th>
+            <th>Grade 10/11</th>
+            <th>English Medium</th>
+            <th>Rs. 450.00</th>
+            <th>Available</th>
+        </tr>
+        <tr>
+            <th>Mathematics</th>
+            <th>Grade 11</th>
+            <th>English Medium</th>
+            <th>Rs. 520.00</th>
+            <th><del>Out of Stock</del></th>
+        </tr>
+    </table>
+    <br><br>
+    <a href="#top">🔺 Back to Top</a>
+    <hr>
+    <h2 id="place">🛒 Quick Order Reservatio</h2>
+    <p>Fill out this form to reserve your books before coming to the store.</p>
+    <from>
+        <fieldset>
+            <legend>Order Details</legend>
+            <lable for="name">Student Admission</lable><br>
+            <input type="text" id="name" placeholder="e.g. ST-1234" name="name">
+            <br><br>
+            <lable for="select">Select Book to Reserve</lable><br>
+            <select id="price" name="price">
+                <option>The Secret Island (Rs. 850.00)</option>
+                <option>Madol Duwa (Rs. 600.00)</option>
+            </select>
+            <br><br>
+            <lable for="date">Preferred Collection Date:</lable><br>
+            <input type="date" name="dob" placeholder="mm/dd/yyyy">
+            <br><br>
+            <lable for="note">Special Notes/Instruction</lable><br>
+            <textarea placeholder="Any Specific reqirments..."></textarea>
+            <br><br>
+            <button type="submit">Submit Reservation</button>
+            <button type="delete">Reset Form</button>
+        </fieldset>
+    </from>
+    <br><br>
+    <small>@ 2026 Apex School Bookshop Mangement System.</small>
 </body>
+
 </html>
