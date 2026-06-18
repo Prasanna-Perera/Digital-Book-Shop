@@ -1,11 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ananda - Official Website</title>
+    <!--icon
+    <link rel="icon" href="assets/ChatGPT Image Jun 17, 2026, 11_16_15 PM-Photoroom.png" type="image/x-Icon">
+    -->
+    <link rel="icon" href="assets/ChatGPT Image Jun 17, 2026, 11_16_15 PM-Photoroom.png" sizes="512x512" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Segoe UI, Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Header */
+
+
+        table:first-of-type h1 {
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        table:first-of-type p {
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        table:nth-of-type(2) {
+            border-collapse: collapse;
+            background: #002147 !important;
+        }
+
+        table:nth-of-type(2) td {
+            border: none;
+            transition: 0.3s;
+        }
+
+        table:nth-of-type(2) td:hover {
+            background: #0056b3;
+        }
+
+        table:nth-of-type(2) a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- Header Section -->
+    <table border="0" width="100%" bgcolor="#f2f2f2" cellpadding="15">
+
+        <tr>
+            <td align="center">
+                <img src="assets/11476437062350058200-removebg-preview.png" alt="Anuththara girls school" width="200"
+                    height="140">
+                <h1>Aksha Bookshop</h1>
+                <p><i>"Winning the World Through Education"</i></p>
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- Navigation Menu Bar -->
+    <table border="1" width="100%" bgcolor="#333333" cellpadding="10">
+        <tr align="center">
+            <td><a href="home.html">
+                    <font color="white">Home</font>
+                </a></td>
+            <td><a href="about.html">
+                    <font color="white">About Us</font>
+                </a></td>
+            <td><a href="album.html">
+                    <font color="white">Album</font>
+                </a></td>
+            <td><a href="contact.html">
+                    <font color="white">Contact Us</font>
+                </a></td>
+        </tr>
+    </table>
+    </section>
+
+    <section id="body sec">
+        <h1>Order Page</h1>
+    <hr>
+    <h2 id="story">📖 Story Books Selection</h2>
+    <table border="1" cellpadding="15" cellspacing="0">
+        <tr>
+            <th>Book Cover</th>
+            <th>Book Title & Details</th>
+            <th>Price</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td> <img width="100" height="150" src="assets/img/ChatGPT Image Jun 11, 2026, 08_28_43 PM.png"
+                    alt="book cover 1"></td>
+            <td><b>The Secret Island</b>
+                <p>Author:Enid Blyton</p>
+                <br>
+                An exicting adventure story about four children spending their holidays on a hidden Island
+            </td>
+            <td>Rs 850.00</td>
+            <td><mark>In Stock</mark></td>
+        </tr>
+        <tr>
+            <td> <img width="100" height="150" src="assets/img/ChatGPT Image Jun 11, 2026, 08_30_52 PM.png"
+                    alt="book cover 2"></td>
+            <td>
+                <b>Madol Duwa</b>
+                <p>Author: Martin Wickramasinha</p>
+                <br>
+                A Classic Sinhales novel translated into English,showcasing the lives of teenage boys on an isolated
+                island.
+            </td>
+            <td>Rs 600.00</td>
+            <td><mark>In Stock</mark></td>
+        </tr>
+    </table>
+    <br><br>
+    <a href="#top">🔺 Back to Top</a>
+    <hr>
+    <h2 id="textbook">📝 School Textbooks</h2>
+    <table border="1" cellpadding="15" cellspacing="0">
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Medium</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Information & Communication Technology(ICT)</th>
+            <th>Grade 10/11</th>
+            <th>English Medium</th>
+            <th>Rs. 450.00</th>
+            <th>Available</th>
+        </tr>
+        <tr>
+            <th>Mathematics</th>
+            <th>Grade 11</th>
+            <th>English Medium</th>
+            <th>Rs. 520.00</th>
+            <th><del>Out of Stock</del></th>
+        </tr>
+    </table>
+    <br><br>
+    <a href="#top">🔺 Back to Top</a>
+    <hr>
+    <h2 id="place">🛒 Quick Order Reservatio</h2>
+    <p>Fill out this form to reserve your books before coming to the store.</p>
+    <from>
+        <fieldset>
+            <legend>Order Details</legend>
+            <lable for="name">Student Admission</lable><br>
+            <input type="text" id="name" placeholder="e.g. ST-1234" name="name">
+            <br><br>
+            <lable for="select">Select Book to Reserve</lable><br>
+            <select id="price" name="price">
+                <option>The Secret Island (Rs. 850.00)</option>
+                <option>Madol Duwa (Rs. 600.00)</option>
+            </select>
+            <br><br>
+            <lable for="date">Preferred Collection Date:</lable><br>
+            <input type="date" name="dob" placeholder="mm/dd/yyyy">
+            <br><br>
+            <lable for="note">Special Notes/Instruction</lable><br>
+            <textarea placeholder="Any Specific reqirments..."></textarea>
+            <br><br>
+            <button type="submit">Submit Reservation</button>
+            <button type="delete">Reset Form</button>
+        </fieldset>
+    </from>
+    <br><br>
+    <small>@ 2026 Apex School Bookshop Mangement System.</small>
 </body>
+
 </html>
